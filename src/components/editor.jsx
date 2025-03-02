@@ -8,7 +8,7 @@ class Editor extends Component {
         <div className="row border border-dark justify-content-between bg-success p-1">
           <h3 className="col-3">Editor</h3>
           <div className="col-1">
-            <button className="btn">
+            <button  onClick={this.props.handleClick} id="full-size" className="btn">
               <i className="fa-solid fa-maximize"></i>
             </button>
           </div>

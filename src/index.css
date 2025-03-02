@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .main-container{
     width: 100vw;
     height: 100vh;
@@ -11,9 +14,12 @@ i{
     padding: 0 ;
 }
 .editor-container{
-    width: 90%;
-    max-height: 300px;
+    width: 80%;
     box-shadow: 5px 2px 12px black ;
+    max-width: 700px;
+}
+.preview-container{
+    max-width: 850px;
 }
 
 .preview-container , .editor-container{
@@ -22,11 +28,25 @@ i{
 
 textarea{
     width: 100%;
-    height:250px;
+    min-height: 250px;
     outline: none;
     resize: vertical;
     margin-bottom: -7px;
+    padding: 10px;
 }
 .output{
     min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.hidden{
+    display: none;
+}
+.full-height{
+    height: 90vh;
+}
+img{
+    max-width: 100%;
 }
