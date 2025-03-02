@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Editor extends Component {
-  state = {};
+
   render() {
     return (
       <div className="container editor-container mt-4">
@@ -15,6 +15,8 @@ class Editor extends Component {
         </div>
         <div className="textarea-container">
           <textarea
+          value={this.props.editor}
+          onChange={(e)=>this.props.updateEditor(e)}
             name=""
             id="editor"
             className="overflow-scrol bg-success"
