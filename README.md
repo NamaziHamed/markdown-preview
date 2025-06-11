@@ -23,10 +23,10 @@ Usage
 Type your Markdown text in the editor pane.
 See the live preview in the previewer pane.
 Click the maximize button to toggle full-screen mode for the editor or previewer.
-Dependencies
-React
-Vite
-marked.js
-Bootstrap
-License
+**Dependencies**
+- React
+- Vite
+- marked.js
+- Bootstrap
+**License**
 This project is licensed under the MIT License. See the LICENSE file for details.
