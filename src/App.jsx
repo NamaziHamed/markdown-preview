@@ -27,7 +27,7 @@ Or _italic_.
 Or... wait for it... **_both!_**
 And feel free to go crazy ~~crossing stuff out~~.
 
-There's also [links](https://www.freecodecamp.org), and
+There's also [links](https://namazihamed.github.io/), and
 > Block Quotes!
 
 And if you want to get really crazy, even tables:
@@ -46,9 +46,8 @@ And here. | Okay. | I think we get it.
 1. And there are numbered lists too.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
-
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`,
-    text: marked.parse("### this is a markupt previewer app")
+`,
+    text: marked.parse("### this is a markupt previewer app"),
   };
 
   updateEditor = (e) => {
@@ -57,10 +56,10 @@ And here. | Okay. | I think we get it.
     this.setState({ editor: newValue, text: html });
   };
 
-componentDidMount = ()=>{
-  const html = marked.parse(this.state.editor)
-  this.setState({text : html})
-}
+  componentDidMount = () => {
+    const html = marked.parse(this.state.editor);
+    this.setState({ text: html });
+  };
 
   handleFullSizeClick = (e) => {
     e.preventDefault();
@@ -81,8 +80,8 @@ componentDidMount = ()=>{
       }
     }
 
-    if (parentDiv.classList.contains("preview-container")){
-      const previewP = parentDiv.querySelector("#preview")
+    if (parentDiv.classList.contains("preview-container")) {
+      const previewP = parentDiv.querySelector("#preview");
       if (!previewP.classList.contains("full-height")) {
         previewP.classList.add("full-height");
         otherDiv.classList.add("hidden");
